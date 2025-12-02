@@ -11,10 +11,8 @@ public class CanPlaceFlower {
                 return true;
             }
 
-
-
             if (flowerbed[i] == 0 &&
-                    (i == 0 || flowerbed[i - 1] == 0) &&
+                    (i == 0 || flowerbed[i - 1] == 0) &&                // expression 1 || expression2 -> if expression 1 true compiler not execute expression2 even its throws exception.
                     (i == length - 1 || flowerbed[i + 1] == 0)) {
                 flowerbed[i] = 1;
                 count++;
