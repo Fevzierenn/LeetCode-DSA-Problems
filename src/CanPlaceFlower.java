@@ -27,31 +27,6 @@ public class CanPlaceFlower {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //public class CanPlaceFlower {
 ////    public boolean canPlaceFlowers(int[] flowerbed, int n) {
 ////        int count = 0;
