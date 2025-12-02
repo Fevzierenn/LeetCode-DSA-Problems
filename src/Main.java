@@ -13,10 +13,16 @@ public class Main {
 //        System.out.println(greatestCommonDivisorofString.gcdOfStrings("LEET", "CODE"));
 //            System.out.println(greatestCommonDivisorofString.gcdOfStrings("TAUXXTAUXXTAUXXTAUXXTAUXX", "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX"));
 
-        KidsWithTheGreatestNumberOfCandies kidsWithTheGreatestNumberOfCandies = new KidsWithTheGreatestNumberOfCandies();
+//        KidsWithTheGreatestNumberOfCandies kidsWithTheGreatestNumberOfCandies = new KidsWithTheGreatestNumberOfCandies();
 
-        System.out.println(kidsWithTheGreatestNumberOfCandies.kidsWithCandies(new int[]{2, 3, 5, 1, 3}, 3));
+//        System.out.println(kidsWithTheGreatestNumberOfCandies.kidsWithCandies(new int[]{2, 3, 5, 1, 3}, 3));
 
+
+        CanPlaceFlower canPlaceFlower = new CanPlaceFlower();
+//        System.out.println(canPlaceFlower.canPlaceFlowers(new int[]{1, 0, 0, 0, 1}, 1));
+//        System.out.println(canPlaceFlower.canPlaceFlowers(new int[]{1,0,0,0,0,1}, 1));
+//        System.out.println(canPlaceFlower.canPlaceFlowers(new int[]{0}, 1));
+        System.out.println(canPlaceFlower.canPlaceFlowers(new int[]{0,0,0,0,1}, 2));
 
     }
     }
