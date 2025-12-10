@@ -25,9 +25,15 @@ public class Main {
 //        System.out.println(canPlaceFlower.canPlaceFlowers(new int[]{0,0,0,0,1}, 2));
 
 
-        ReverseVowelsOfString reverseVowelsOfString = new ReverseVowelsOfString();
-//        System.out.println(reverseVowelsOfString.reverseVowels("toyota"));
-        System.out.println(reverseVowelsOfString.reverseVowels("A man, a plan, a canal: Panama"));
+//        ReverseVowelsOfString reverseVowelsOfString = new ReverseVowelsOfString();
+////        System.out.println(reverseVowelsOfString.reverseVowels("toyota"));
+//        System.out.println(reverseVowelsOfString.reverseVowels("A man, a plan, a canal: Panama"));
+
+
+//        ReverseWordsInString reverseWordsInString = new ReverseWordsInString();
+//        System.out.println(reverseWordsInString.reverseWords("   Selam dostlar  nasilsiniz  hahah   "));
+//        System.out.println(reverseWordsInString.reverseWords(" Derrick    Rose can go upstairs.  "));
+//        System.out.println(reverseWordsInString.reverseWords("  Lebron James has no regards      for  human life    "));
 
     }
     }
