@@ -18,11 +18,16 @@ public class Main {
 //        System.out.println(kidsWithTheGreatestNumberOfCandies.kidsWithCandies(new int[]{2, 3, 5, 1, 3}, 3));
 
 
-        CanPlaceFlower canPlaceFlower = new CanPlaceFlower();
+//        CanPlaceFlower canPlaceFlower = new CanPlaceFlower();
 //        System.out.println(canPlaceFlower.canPlaceFlowers(new int[]{1, 0, 0, 0, 1}, 1));
 //        System.out.println(canPlaceFlower.canPlaceFlowers(new int[]{1,0,0,0,0,1}, 1));
 //        System.out.println(canPlaceFlower.canPlaceFlowers(new int[]{0}, 1));
-        System.out.println(canPlaceFlower.canPlaceFlowers(new int[]{0,0,0,0,1}, 2));
+//        System.out.println(canPlaceFlower.canPlaceFlowers(new int[]{0,0,0,0,1}, 2));
+
+
+        ReverseVowelsOfString reverseVowelsOfString = new ReverseVowelsOfString();
+//        System.out.println(reverseVowelsOfString.reverseVowels("toyota"));
+        System.out.println(reverseVowelsOfString.reverseVowels("A man, a plan, a canal: Panama"));
 
     }
     }
