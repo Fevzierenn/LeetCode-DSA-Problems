@@ -1,12 +1,6 @@
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.Set;
-import java.util.regex.Pattern;
 
 public class ReverseVowelsOfString {
-
-
     public String reverseVowels(String s) {
         Set<Character> VOWELS = Set.of('a', 'e', 'i', 'o', 'u',
                                 'A', 'E', 'I', 'O', 'U');
