@@ -1,0 +1,31 @@
+ Product of Array Except Self - Solution Explanation
+
+🧠 Core Logic & Pattern
+This solution addresses the problem using a **Two-Pass Linear Scan** approach combined with **Zero Counting**. Instead of using nested loops (which would be O(N²)), we utilize the mathematical property of division while carefully handling edge cases involving zero.
+
+🛠 The Algorithm
+
+1. Aggregation Phase (First Pass):**
+We traverse the array once to gather two pieces of critical information:
+- `times`: The product of all *non-zero* elements.
+- `countZeros`: The total number of zeros present in the array.
+
+2. Construction Phase (Second Pass):**
+We traverse the array again to build the result based on the state of `countZeros`.
+
+ ⚠️ Handling Edge Cases (The "Zero" Problem)
+
+The logic branches into three distinct scenarios based on the number of zeros found:
+
+| Scenario | Condition | Logic Applied | Result Example |
+| :--- | :--- | :--- | :--- |
+| **Multiple Zeros** | `countZeros >= 2` | Impossible to have a non-zero product for any element. | `[0, 0, 0, 0]` |
+| **Single Zero** | `countZeros == 1` | **If current is 0:** It gets the total product.<br>**If current is not 0:** It gets 0 (multiplied by the single zero). | Input: `[1, 0, 3]`<br>Output: `[0, 3, 0]` |
+| **No Zeros** | `countZeros == 0` | Standard division logic applies. | `result[i] = totalProduct / nums[i]` |
+
+ 🚀 Complexity Analysis
+
+- **Time Complexity:** `O(N)`
+  - We iterate through the input array exactly twice (2N), which simplifies to linear time complexity.
+- **Space Complexity:** `O(1)`
+  - We only store a few integer variables (`times`, `countZeros`) for state management. The output array is not counted towards auxiliary space complexity.

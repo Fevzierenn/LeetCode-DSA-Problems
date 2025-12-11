@@ -35,5 +35,9 @@ public class Main {
 //        System.out.println(reverseWordsInString.reverseWords(" Derrick    Rose can go upstairs.  "));
 //        System.out.println(reverseWordsInString.reverseWords("  Lebron James has no regards      for  human life    "));
 
+
+//        ProductofArrayExceptSelf productofArrayExceptSelf = new ProductofArrayExceptSelf();
+//        productofArrayExceptSelf.productExceptSelf(new int[]{0,0});
+
     }
     }
