@@ -1,0 +1,26 @@
+# Move Zeroes - Optimal Solution
+
+## 🧠 Core Logic & Pattern
+This solution utilizes the **Two Pointers** technique to achieve an in-place transformation with minimal operations.
+
+### 🛠 The Algorithm
+We maintain two pointers to manage the state of the array:
+1.  **`i` (Fast Pointer):** Iterates through the array to identify non-zero elements.
+2.  **`j` (Slow Pointer):** Keeps track of the position of the first zero (or the next available slot for a non-zero number).
+
+### 🚀 Execution Flow
+- Iterate through the array with `i`.
+- When `nums[i]` is non-zero:
+  - Check if `nums[j]` is `0`.
+  - If yes, **swap** `nums[i]` and `nums[j]`. This moves the non-zero element to the front and pushes the zero towards the back.
+  - Increment `j` to point to the next slot.
+- If `nums[i]` is zero, simply continue (effectively expanding the window of zeros).
+
+### ✨ Optimization Note
+The condition `if(nums[j] == 0)` is a crucial optimization. It prevents swapping a non-zero element with itself when the array has no zeros yet (e.g., `[1, 2, 3, 0, 5]`). This minimizes array write operations.
+
+## 📊 Complexity Analysis
+- **Time Complexity:** `O(N)`
+  - Single pass through the array.
+- **Space Complexity:** `O(1)`
+  - Performed in-place without using auxiliary arrays.
