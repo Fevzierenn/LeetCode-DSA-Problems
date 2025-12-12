@@ -38,6 +38,9 @@ public class Main {
 
 //        ProductofArrayExceptSelf productofArrayExceptSelf = new ProductofArrayExceptSelf();
 //        productofArrayExceptSelf.productExceptSelf(new int[]{0,0});
+        
+        MoveZeroes moveZeroes = new MoveZeroes();
+        moveZeroes.moveZeroes1(new int[]{0,1,0,3,12});
 
     }
     }
