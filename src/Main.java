@@ -40,7 +40,7 @@ public class Main {
 //        productofArrayExceptSelf.productExceptSelf(new int[]{0,0});
         
         MoveZeroes moveZeroes = new MoveZeroes();
-        moveZeroes.moveZeroes1(new int[]{0,1,0,3,12});
+        moveZeroes.moveZeroes1(new int[]{1,2,3,4,5});
 
     }
     }
