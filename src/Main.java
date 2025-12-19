@@ -38,9 +38,12 @@ public class Main {
 
 //        ProductofArrayExceptSelf productofArrayExceptSelf = new ProductofArrayExceptSelf();
 //        productofArrayExceptSelf.productExceptSelf(new int[]{0,0});
-        
-        MoveZeroes moveZeroes = new MoveZeroes();
-        moveZeroes.moveZeroes1(new int[]{1,2,3,4,5});
+//
+//        MoveZeroes moveZeroes = new MoveZeroes();
+//        moveZeroes.moveZeroes1(new int[]{1,2,3,4,5});
+
+        IsSubsequence isSubsequence = new IsSubsequence();
+        System.out.println(isSubsequence.isSubsequence("b", "abc"));
 
     }
     }
