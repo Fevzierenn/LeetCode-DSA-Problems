@@ -1,4 +1,4 @@
-package Arrays_Hashing;
+package mix;
 
 import java.util.HashMap;
 import java.util.Map;

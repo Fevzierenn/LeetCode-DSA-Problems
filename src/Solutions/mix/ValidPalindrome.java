@@ -1,4 +1,4 @@
-package TwoPointers;
+package mix;
 
 public class ValidPalindrome {
     static void main() {

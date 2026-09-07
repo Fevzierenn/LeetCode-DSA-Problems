@@ -1,3 +1,5 @@
+package mix;
+
 public class ProductofArrayExceptSelf {
     public int[] productExceptSelf(int[] nums) {
         int[] timesArr = new int[nums.length];

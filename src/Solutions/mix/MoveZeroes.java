@@ -1,3 +1,5 @@
+package mix;
+
 public class MoveZeroes {
 
     public void moveZeroes1(int[] nums) {

@@ -1,3 +1,5 @@
+package mix;
+
 public class CanPlaceFlower {
 
 
