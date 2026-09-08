@@ -1,4 +1,4 @@
-package N150.ContainsDuplicate_001;
+package N150.Arrays_Hashing.ContainsDuplicate_001;
 
 /*
 Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
@@ -20,9 +20,7 @@ Output: true
  */
 
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 public class main {

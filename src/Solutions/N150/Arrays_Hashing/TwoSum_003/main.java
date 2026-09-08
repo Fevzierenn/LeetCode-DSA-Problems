@@ -1,4 +1,4 @@
-package N150.TwoSum_003;
+package N150.Arrays_Hashing.TwoSum_003;
 
 import java.util.HashMap;
 import java.util.Map;

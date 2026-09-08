@@ -1,9 +1,4 @@
-package N150.ValidAnagram_002;
-
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.HashMap;
-import java.util.Map;
+package N150.Arrays_Hashing.ValidAnagram_002;
 
 public class main {
     public static void main(String[] args) {

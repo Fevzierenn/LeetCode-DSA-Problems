@@ -1,10 +1,8 @@
-package N150.Top_K_FrequentElement_005;
+package N150.Arrays_Hashing.Top_K_FrequentElement_005;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class main {
     public static void main(String[] args) {

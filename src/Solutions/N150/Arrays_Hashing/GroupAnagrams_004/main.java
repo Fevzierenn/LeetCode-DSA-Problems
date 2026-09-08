@@ -1,4 +1,4 @@
-package N150.GroupAnagrams_004;
+package N150.Arrays_Hashing.GroupAnagrams_004;
 
 import java.util.*;
 
