@@ -31,7 +31,7 @@ class Solution {
                 rightI--;
             }
             else
-                return new int[]{leftI+1, rightI+1};
+                return new int[]{leftI+1,  rightI+1};
         }
         return new int[]{};
     }
