@@ -12,36 +12,58 @@ minStack.top();    // return 0
 minStack.getMin(); // return -2
  */
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.PriorityQueue;
-import java.util.Stack;
+import java.util.*;
 
 public class main {
     public static void main(String[] args) {
         MinStack stack = new MinStack();
-        stack.push(31);
-        stack.push(41);
-        stack.push(51);
+        stack.push(2147483646);
+        stack.push(2147483646);
+        stack.push(2147483647);
+        System.out.println(stack.top());
+        System.out.println(stack.getMin());
+        stack.pop();
+        System.out.println(stack.getMin());
+        stack.pop();
+        stack.push(2147483647);
+        System.out.println(stack.top());
+        System.out.println(stack.getMin());
+        stack.push(-2147483648);
+        System.out.println(stack.top());
+        System.out.println(stack.getMin());
         stack.pop();
         System.out.println(stack.getMin());
 
     }
 }
 class MinStack {
-    private final int[] values = new int[30000];
-    private final int[] mins   = new int[30000];
-    private int top = -1;
+    Stack<Integer> stackMain;
+    Stack<Integer> stackMin;
 
+    public MinStack(){
+        this.stackMain = new Stack<>();
+        this.stackMin = new Stack<>();
+    }
     public void push(int value) {
-        top++;
-        values[top] = value;
-        mins[top] = (top == 0) ? value : Math.min(value, mins[top - 1]);
+        stackMain.push(value);
+        if (stackMin.isEmpty() || stackMin.peek() >= value) {
+            stackMin.push(value);
+        }
     }
 
-    public void pop()    { top--; }
-    public int  top()    { return values[top]; }
-    public int  getMin() { return mins[top]; }
+    public void pop()    {
+        if(stackMain.isEmpty()) return;
+        if(stackMin.peek().equals(stackMain.peek())) {
+            stackMain.pop();
+            stackMin.pop();
+        }
+        else
+            stackMain.pop();
+
+
+    }
+    public int  top()    { return stackMain.peek(); }
+    public int  getMin() { return stackMin.peek(); }
 }
 
 /**
