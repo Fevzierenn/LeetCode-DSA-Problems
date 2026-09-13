@@ -28,33 +28,57 @@ public class main {
 
     }
 }
-
 class MinStack {
-    Stack<Integer> stack;
-    PriorityQueue<Integer> queue;
-    public MinStack() {
-        this.stack = new Stack<Integer>();
-        this.queue = new PriorityQueue<>();
-    }
+    private final int[] values = new int[30000];
+    private final int[] mins   = new int[30000];
+    private int top = -1;
 
     public void push(int value) {
-        this.stack.push(value);
-        this.queue.offer(value);
+        top++;
+        values[top] = value;
+        mins[top] = (top == 0) ? value : Math.min(value, mins[top - 1]);
     }
 
-    public void pop() {
-        int value = this.stack.pop();
-        this.queue.remove(value);
-    }
-
-    public int top() {
-        return this.stack.peek();
-    }
-
-    public int getMin() {
-        return this.queue.peek();
-    }
+    public void pop()    { top--; }
+    public int  top()    { return values[top]; }
+    public int  getMin() { return mins[top]; }
 }
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack obj = new MinStack();
+ * obj.push(value);
+ * obj.pop();
+ * int param_3 = obj.top();
+ * int param_4 = obj.getMin();
+ */
+//
+//class MinStack {
+//    Stack<Integer> stack;
+//
+//    public MinStack() {
+//        this.stack = new Stack<Integer>();
+//        this.queue = new PriorityQueue<>();
+//    }
+//
+//    public void push(int value) {
+//        this.stack.push(value);
+//        this.queue.offer(value);
+//    }
+//
+//    public void pop() {
+//        int value = this.stack.pop();
+//        this.queue.remove(value);
+//    }
+//
+//    public int top() {
+//        return this.stack.peek();
+//    }
+//
+//    public int getMin() {
+//        return this.queue.peek();
+//    }
+//}
 
 
 
