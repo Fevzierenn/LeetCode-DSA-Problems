@@ -8,6 +8,7 @@ public class main {
         head.next = new ListNode(2);
         head.next.next = new ListNode(0);
         head.next.next.next = new ListNode(-4);
+        head.next.next.next.next = head.next;
         System.out.println(Solution.hasCycle(head));
     }
 }
@@ -21,7 +22,21 @@ class ListNode {
      }
  }
  class Solution {
-    public static boolean hasCycle(ListNode head) {
+     public static boolean hasCycle(ListNode head) {
+         ListNode slow  = head;
+         ListNode fast = head;
+         while (fast != null && fast.next != null){
+             slow = slow.next;
+             fast = fast.next.next;
+             if(slow == fast) return true;
+         }
+         return false;
+     }
+
+
+
+
+    public static boolean hasCycle2(ListNode head) {
         int counter =1;
         HashSet<Integer> set = new HashSet<>();
         Boolean isCycle = true;
